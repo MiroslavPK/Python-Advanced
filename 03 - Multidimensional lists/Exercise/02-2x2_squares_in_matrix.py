@@ -2,9 +2,7 @@ def get_squares(matrix):
     squares = []
     for i in range(rows - 1):
         for j in range(cols - 1):
-            square = [
-                matrix[i][j], matrix[i][j + 1], matrix[i + 1][j], matrix[i + 1][j + 1]
-            ]
+            square = [matrix[i][j], matrix[i][j + 1], matrix[i + 1][j], matrix[i + 1][j + 1]]
             squares.append(square)
     return squares
 
